@@ -19,7 +19,7 @@ public class ShapeApp {
     		System.out.println("area: " + tList.get(i).getArea());
     		System.out.println("perimeter: " + tList.get(i).getPerimeter());
     		if(tList.get(i) instanceof Resizeable) {	//객체 instanceof 클라쓰
-    			((Resizeable)tList.get(i)).resize(0.5);
+    			((Rectangle)tList.get(i)).resize(0.5);
     			System.out.println("new area: " + tList.get(i).getArea());
     			System.out.println("new perimeter: " + tList.get(i).getPerimeter());
     		}
